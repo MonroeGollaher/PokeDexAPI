@@ -20,8 +20,25 @@
             </a>
         </nav>
     </header>
-    <main>
-        <div id="app"></div>
+    <main container="fluid">
+        <div id="app" class="row">
+            <div class="col-3 pokemon">
+                <h1>PokeMon:</h1>
+                <ul id="apiPokemon">
+
+                </ul>
+            </div>
+            <div class="col-6" id="activePokemon">
+                <h1>Active PokeMon:</h1>
+
+            </div>
+            <div class="col-3">
+                <h1>My PokeMon:</h1>
+                <ul id="myPokemon">
+
+                </ul>
+            </div>
+        </div>
     </main>
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
@@ -31,6 +48,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 
