@@ -1,4 +1,3 @@
-import PokeDex from "./Models/APIPokemon.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 import APIPokemon from "./Models/APIPokemon.js"
@@ -7,7 +6,7 @@ class AppState extends EventEmitter {
   /** @type {APIPokemon[]} */
   apiPokemon = []
   activePokemon = null
-  mySpells = []
+  myPokemon = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {

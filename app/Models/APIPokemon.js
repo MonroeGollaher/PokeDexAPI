@@ -10,14 +10,13 @@ export default class APIPokemon {
     get Template() {
 
         return /*html*/`
-        <div class="card">
+        <div class="card shadow-lg">
             <div class="card-body">
                 <img src="${this.sprite}">
                 <h4 class="card-title">Name: ${this.name}</h4>
-                <p class="card-text">Description : ${this.description}</p>
                 <p class="card-text">Weight : ${this.weight}</p>
                 <p class="card-text">ID : ${this.id}</p>
-                ${this.Button}
+                <button type="button" class="btn btn-primary" onclick="app.myPokemonController.catchPokemon(${this.name})">Add</button>
             </div>
         </div>
         `
